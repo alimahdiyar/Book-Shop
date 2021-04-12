@@ -2,7 +2,7 @@
  <div class="books">
   <H2 msg='لیست کتاب ها '/>
   <div :key="book.id" v-for="book in $store.state.books">
-      <router-link to="/Book.vue">{{ book.text }}</router-link>
+      <router-link to="../views/Book.vue">{{ book.text }}</router-link>
       <h4>{{ book.price }}</h4>
       <p>{{ book.description }}</p>
     </div>
